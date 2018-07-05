@@ -14,4 +14,4 @@ navigation_weight: 1
 |---	    |---	    |---      |---|
 |   KIX2.0| wip	| VGR  |[KIX2.0](pages/aoci/kix2/)| 
 |   KIXE| wip	| HVPI|[KIXE](pages/aoci/kixe/)| 
-|   KIX-CC| wip	| AWI|[KIX-CC](pages/aoci/kixcc/)| 
+|   KIX-CC| wip	| IWA|[KIX-CC](pages/aoci/kixcc/)| 
