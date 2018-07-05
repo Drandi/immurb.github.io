@@ -12,6 +12,6 @@ navigation_weight: 1
 {: .table .table-bordered}
 |   Method | Short Description	| Used for  |Link to own page|
 |---	    |---	    |---      |---|
-|   KIX2.0| wip	| VGR  |[Encompassing](encompassing.md)| 
-|   KIXE| wip	| HVPI|[Encompassing](encompassing.md)| 
-|   KIX-CC| wip	| AWI|[Encompassing](encompassing.md)| 
+|   KIX2.0| wip	| VGR  |[KIX2.0](pages/aoci/kix2/)| 
+|   KIXE| wip	| HVPI|[KIXE](pages/aoci/kixe/)| 
+|   KIX-CC| wip	| AWI|[KIX-CC](pages/aoci/kixcc/)| 
