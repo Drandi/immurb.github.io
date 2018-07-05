@@ -1,8 +1,6 @@
 - title: "Home"
   href: "/"
-- title: "Quick Start"
-  href: "/pages/quick-start/"
-- title: "Math"
+- title: "Aggregation of chainlinked indices"
   href: "/pages/basic/"
   subitems:
     - title: "Matrices"
