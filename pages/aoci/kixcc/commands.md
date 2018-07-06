@@ -8,19 +8,19 @@ category: KIX-CC
 ---
 
 Any single command or stack of commands is specified in the command line panel and executed by pressing either the \rightclick{Ctrl} and \rightclick{Enter} keys together or the ``green arrow'' button in the upper left corner of that panel.
-Please note that the plug-in is not developed to check the sensibility of your computations. To yield sensible results the chain-linked indices to be aggregated or disaggregated have to have the same reference period. In this sense, the reference period is defined as the period for which the series is based to an average of $100$.
+Please note that the plug-in is not developed to check the sensibility of your computations. To yield sensible results the chain-linked indices to be aggregated or disaggregated have to have the same reference period. In this sense, the reference period is defined as the period for which the series is based to an average of 100.
 
-Each command described in this section is essentially a sequence of mandatory and optional arguments. To distinguish the two types of arguments, the latter are displayed in brackets. Comments can be added as entire lines by using the \verb|#| symbol as the first character in the respective lines. However, please note that comments cannot be added after commands.
+Each command described in this section is essentially a sequence of mandatory and optional arguments. To distinguish the two types of arguments, the latter are displayed in brackets. Comments can be added as entire lines by using the *#* symbol as the first character in the respective lines. However, please note that comments cannot be added after commands.
 
-\section{Chain linking: the {\tt CLI.CC} command}
+##Chain linking: the 'CLI.CC' command
 
-The {\tt CLI.CC} command is used to aggregate and/or disaggregate two or more continuously chained indices. To this end, the following steps are carried out under the assumption that all continuously chained indices involved in the calculation have the same base and reference periods:
-\begin{enumerate}
-\item Each index is unchained.
-\item A weighted sum/difference of the unchained time series is calculated, where the weight of each unchained series in period $t$ is given by the last value of the respective weighting series in period $t-1$. If a weighting series does not cover the period $t = 0$, then its last value in this period is approximated by the last value in period $t = 1$. However, the user can decide whether or not (default) the values of the continuously chained aggregate are displayed for period $t = 1$, see section \ref{sec:opt} for further details.
-\item The resulting series is chained: To obtain a time series showing the long term growth compared to the first observation, the aggregated growth factor are continuously multiplied. for the first period a startingvalue of $100$ is set.
-\item The aggregate is normalised to the desired reference period, so that the reference period equals $100$.
-\end{enumerate}
+The 'CLI.CC' command is used to aggregate and/or disaggregate two or more continuously chained indices. To this end, the following steps are carried out under the assumption that all continuously chained indices involved in the calculation have the same base and reference periods:
+
+1. Each index is unchained.
+2. A weighted sum/difference of the unchained time series is calculated, where the weight of each unchained series in period $t$ is given by the last value of the respective weighting series in period $t-1$. If a weighting series does not cover the period $t = 0$, then its last value in this period is approximated by the last value in period $t = 1$. However, the user can decide whether or not (default) the values of the continuously chained aggregate are displayed for period $t = 1$, see section \ref{sec:opt} for further details.
+3. The resulting series is chained: To obtain a time series showing the long term growth compared to the first observation, the aggregated growth factor are continuously multiplied. for the first period a startingvalue of $100$ is set.
+4. The aggregate is normalised to the desired reference period, so that the reference period equals 100.
+
 The specification of the command is given by
 \begin{center}
 \tt [Name=]CLI.CC,index1,[weight1,]+/-,index2,[weight2,]...,refperiod
