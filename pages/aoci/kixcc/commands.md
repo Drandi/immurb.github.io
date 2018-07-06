@@ -12,7 +12,7 @@ Please note that the plug-in is not developed to check the sensibility of your c
 
 Each command described in this section is essentially a sequence of mandatory and optional arguments. To distinguish the two types of arguments, the latter are displayed in brackets. Comments can be added as entire lines by using the **#** symbol as the first character in the respective lines. However, please note that comments cannot be added after commands.
 
-## Chain linking: the 'CLI.CC' command
+### Chain linking: the *CLI.CC* command
 
 The 'CLI.CC' command is used to aggregate and/or disaggregate two or more continuously chained indices. To this end, the following steps are carried out under the assumption that all continuously chained indices involved in the calculation have the same base and reference periods:
 
@@ -22,9 +22,9 @@ The 'CLI.CC' command is used to aggregate and/or disaggregate two or more contin
 4. The aggregate is normalised to the desired reference period, so that the reference period equals 100.
 
 The specification of the command is given by
-\begin{center}
-\tt [Name=]CLI.CC,index1,[weight1,]+/-,index2,[weight2,]...,refperiod
-\end{center}
+
+$$ [Name=]CLI.CC,index1,[weight1,]+/-,index2,[weight2,]...,refperiod $$
+
 with the following arguments:
 \begin{tabular_new}
 {\tt Name} & Name of the continuously chained aggregate to be displayed in the \window{Results} panel. If not specified, it is set to {\it Formula} $n$, where $n$ is the line of the command in the command line panel of the \window{MyKIX} document. \\
