@@ -1,6 +1,6 @@
 ---
 layout: left-menu
-title: WIP
+title: Introduction
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Introduction to KIX-CC
 order: 0
@@ -21,6 +21,8 @@ Currently, the software does not apply any tests concerning the usefulness or ap
 
 The KIX-CC plug-in allows the user to carry out aggregation and disaggregation of continuously chained indices as well as calculation of their growth contributions in JD+. The following table provides an overview of the operations, commands, functions, and methods available for monthly and quarterly time series:
 
+
+{: .table .table-bordered}
 | Operation | Function | Command | Method |
 | --------- | -------- | ------- | ------ |
 | Chain-linking | Aggregation and disaggregation of continuously chained indices | CLI.CC | Arz 2018|
