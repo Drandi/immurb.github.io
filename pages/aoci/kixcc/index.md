@@ -25,8 +25,8 @@ The KIX-CC plug-in allows the user to carry out aggregation and disaggregation o
 {: .table .table-bordered}
 | Operation | Function | Command | Method |
 | --------- | -------- | ------- | ------ |
-| Chain-linking | Aggregation and disaggregation of continuously chained indices | CLI.CC | Arz 2018|
-| Growth contribution | Calculation of growth contribution of a component series to an aggregate serie's growth rate | CTG.CC | Rentzsch 2018|
+| Chain-linking | Aggregation and disaggregation of continuously chained indices | *CLI.CC* | Arz 2018|
+| Growth contribution | Calculation of growth contribution of a component series to an aggregate serie's growth rate | *CTG.CC* | Rentzsch 2018|
 
 ## Installation
 
