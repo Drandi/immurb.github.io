@@ -37,11 +37,15 @@ with the following arguments:
 {\tt refperiod} & Depend on the period unit (monthly, quarterly, semi-annual or annual) the user has to choice the correct reference period of the continuously chained index (for example: the notation $IV-2012$ means the April of $2012$ for monthly time series, for quarterly time series it means the fourth quarter of $2012$).
 \end{tabular_new}
 
-```**Example _CLI.CC_ command**
+```
+**Example _CLI.CC_ command**
+
 Suppose we have loaded five quarterly indices and seven quarterly weighting series to the \window{Index Data} and \window{Weight Data} panels, respectively, and the command line panel reads:
 
 $$    CLI.CC,i1,+,i2,IV-2012 $$
+
 $$    CLI.CC,i5,w5,-,i4,w4,IV-2012 $$
+
 $$    MyCLi1=CLI.CC,i1,w6,+,i2,w7,-,i4,w4,I-2015 $$
 
 Executing these commands, the \window{Results} panel will display three continuously chained indices:
