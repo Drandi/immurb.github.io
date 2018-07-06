@@ -14,7 +14,7 @@ Each command described in this section is essentially a sequence of mandatory an
 
 ### Chain linking: the *CLI.CC* command
 
-The 'CLI.CC' command is used to aggregate and/or disaggregate two or more continuously chained indices. To this end, the following steps are carried out under the assumption that all continuously chained indices involved in the calculation have the same base and reference periods:
+The *CLI.CC* command is used to aggregate and/or disaggregate two or more continuously chained indices. To this end, the following steps are carried out under the assumption that all continuously chained indices involved in the calculation have the same base and reference periods:
 
 1. Each index is unchained.
 2. A weighted sum/difference of the unchained time series is calculated, where the weight of each unchained series in period $t$ is given by the last value of the respective weighting series in period $t-1$. If a weighting series does not cover the period $t = 0$, then its last value in this period is approximated by the last value in period $t = 1$. However, the user can decide whether or not (default) the values of the continuously chained aggregate are displayed for period $t = 1$, see section \ref{sec:opt} for further details.
@@ -37,30 +37,28 @@ with the following arguments:
 {\tt refperiod} & Depend on the period unit (monthly, quarterly, semi-annual or annual) the user has to choice the correct reference period of the continuously chained index (for example: the notation $IV-2012$ means the April of $2012$ for monthly time series, for quarterly time series it means the fourth quarter of $2012$).
 \end{tabular_new}
 
-\begin{exam}[{\tt CLI.CC} command]
+```**Example _CLI.CC_ command**
 Suppose we have loaded five quarterly indices and seven quarterly weighting series to the \window{Index Data} and \window{Weight Data} panels, respectively, and the command line panel reads:
-\begin{verbatim}
-    CLI.CC,i1,+,i2,IV-2012
-    CLI.CC,i5,w5,-,i4,w4,IV-2012
-    MyCLi1=CLI.CC,i1,w6,+,i2,w7,-,i4,w4,I-2015
-\end{verbatim}
+
+$$    CLI.CC,i1,+,i2,IV-2012 $$
+$$    CLI.CC,i5,w5,-,i4,w4,IV-2012 $$
+$$    MyCLi1=CLI.CC,i1,w6,+,i2,w7,-,i4,w4,I-2015 $$
+
 Executing these commands, the \window{Results} panel will display three continuously chained indices:
 (1) a continuously chained aggregate of the index series $i1$ and $i2$, where $w1$ and $w2$ are used as respective weighting series from the \window{Weight Data} panel and with reference period fourth quarter of 2012, with the name Formula $1$,
 (2) a disaggregated continuously chained index with the name Formula $2$ derived by subtracting the continuously chained index $i4$ from the continuously chained aggregate $i5$, using the weighting series $w4$ for index series $i4$ and $w5$ for the aggregate $i5$ and with reference period fourth quarter of 2012,
 (3) a continuously chained aggregate with the name Formula 3, where the index series $i1$ and $i2$ are aggregated with the aid of the weighting series $w6$ and $w7$, and subtracting the component index series i4 with using $w4$ as weighting series from the \window{Weight Data} panel, with reference period first quarter of 2015 and renamed by user's choice.
-\end{exam}
+```
 
-\section{Contribution to growth: the {\tt CTG.CC} command}
+### Contribution to growth: the *CTG.CC* command
 
-The {\tt CTG.CC} command is used to compute the growth contribution of a continuously chained component to a continuously chained aggregate with the method of \cite{Rau:2017}. To this end, the following steps are carried out:
-\begin{enumerate}
-\item The continuously chained component and the continuously chained aggregate are unchained.
-\item The growth contribution is calculated directly from the unchained component and aggregate according to formulas derived by \cite{Rau:2017}.
-\end{enumerate}
+The *CTG.CC* command is used to compute the growth contribution of a continuously chained component to a continuously chained aggregate with the method of \cite{Rau:2017}. To this end, the following steps are carried out:
+
+1. The continuously chained component and the continuously chained aggregate are unchained.
+2. The growth contribution is calculated directly from the unchained component and aggregate according to formulas derived by \cite{Rau:2017}.
+
 The specification of the command is given by
-\begin{center}
-\tt [Name=]CTG.CC,iContr,[wContr,]iTotal,[wTotal,]lags
-\end{center}
+$$ [Name=]CTG.CC,iContr,[wContr,]iTotal,[wTotal,]lags $$
 with the following arguments:
 \begin{tabular_new}
 {\tt Name} & Name of the growth contribution to be displayed in the \window{Results} panel. If not specified, it is set to {\it Formula} $n$, where $n$ is the line of the command in the command line panel of the \window{MyKIX} document. \\
