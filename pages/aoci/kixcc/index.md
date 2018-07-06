@@ -32,7 +32,7 @@ The KIX-CC plug-in allows the user to carry out aggregation and disaggregation o
 
 Download the installation file from the plug-in's GitHub repository and save it to your local folder of choice. Choose
 \begin{center}
-\pathdef{Tools ; Plugins}
+text
 \end{center}
 from the JD+ drop down menu, open the **Downloaded** sheet and press the \rightclick{Add Plugins} button. Select the local copy of the installation file, click the \rightclick{Install} button and accept the terms in the licence agreements. Once the installation is finished, KIX documents and a global option menu are available. Note that the plug-in is automatically activated and, therefore, a restart of JD+ is not necessary.
 
