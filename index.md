@@ -13,5 +13,5 @@ navigation_weight: 1
 |   Method | Short Description	| Used for  |Link to own page|
 |---	    |---	    |---      |---|
 |   KIX2.0| wip	| VGR  |[KIX2.0](pages/aoci/kix2/)| 
-|   KIXE| The program KIX-CC offers for continuously chain-linked indices the aggregation or disaggregation of two or more indices, or the calculation of contributions to growth.	| HVPI|[KIXE](pages/aoci/kixe/)| 
-|   KIX-CC| wip	| IWA|[KIX-CC](pages/aoci/kixcc/)| 
+|   KIXE| wip	| HVPI|[KIXE](pages/aoci/kixe/)| 
+|   KIX-CC| The program KIX-CC offers for continuously chain-linked indices the aggregation or disaggregation of two or more indices, or the calculation of contributions to growth.	| IWA|[KIX-CC](pages/aoci/kixcc/)| 
